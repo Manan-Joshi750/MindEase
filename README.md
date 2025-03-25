@@ -3,7 +3,9 @@ MindEase is a thoughtful and interactive web application designed to assist indi
 
 # ✨ Features : 
 🔹 **AI Chatbot –** Talk to a friendly chatbot that provides comfort and guidance.
+
 🔹 **Self-Assessment Questionnaire –** Answer a few questions to get insights into possible mental health conditions.
+
 🔹 **Curated Resources –** Access a collection of valuable articles, exercises, and videos to support your well-being.
 
 # 🛠️ Tech Stack : 
@@ -67,6 +69,9 @@ Here are some official documentation links to learn the tech stack used in this 
 | **🗄️ MongoDB** | [MongoDB Docs](https://www.mongodb.com/docs/) |
 
 # 🎯 Future Enhancements
+
 ✅ More personalized chatbot responses.
+
 ✅ Integration with mental health professionals.
+
 ✅ Mood tracking and journaling features.
