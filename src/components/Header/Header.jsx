@@ -11,7 +11,9 @@ function Header({ onSelectChange, displayComponent }) {
         window.location.href = "https://www.nimh.nih.gov/health/topics/suicide-prevention";
         return null;
       case "ex1":
-        window.location.href = "https://sunny-blini-3f4aeb.netlify.app/";
+        // 🛑 REMOVED THE EXTERNAL NETLIFY REDIRECT
+        // Returning null keeps the application internally on your local site,
+        // allowing the parent component to render your new About.jsx file via state.
         return null;
       case "ex2":
         window.location.href = "https://www.thelivelovelaughfoundation.org/helpline";
@@ -23,18 +25,23 @@ function Header({ onSelectChange, displayComponent }) {
 
   return (
     <div id="header">
-      <h4 className="header1">Mental Health Companion</h4>
+      {/* Added a cursor pointer and an optional refresh handler to easily go back home */}
+      <h4 className="header1" style={{ cursor: "pointer" }} onClick={() => window.location.reload()}>
+        Mental Health Companion
+      </h4>
       <nav className="header-right">
         <li>
           <select value={displayComponent} onChange={onSelectChange}>
-            <option>More</option>
+            <option value="">More</option>
             <option value="ex2">Helpline Number</option>
             <option value="ex">Suicidal Helpline Number</option>
             <option value="ex1">About us</option>
           </select>
         </li>
         <li>
-          <RenderSelectComponent />
+          <nav>
+            <RenderSelectComponent />
+          </nav>
         </li>
       </nav>
     </div>
