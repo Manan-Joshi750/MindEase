@@ -32,19 +32,19 @@ cd MindEase
 
 ### 2️⃣ Install Dependencies
 
-# Install frontend dependencies (Root directory)
+Install frontend dependencies (Root directory)
 ```bash
 npm install
 ```
 
-# Install backend dependencies
+Install backend dependencies
 ```bash
 cd backend
 npm install
 ```
 
 ### 3️⃣ Environment Setup
-# Create a .env file in the backend directory and add your secret keys:
+Create a .env file in the backend directory and add your secret keys:
 ```bash 
 OPENAI_API_KEY=your_openai_api_key_here
 PORT=5000
@@ -53,12 +53,12 @@ PORT=5000
 ### 4️⃣ Run the Application
 You will need two separate terminal windows to run the application locally.
 
-# Terminal 1: Start the Backend ServerBashcd backend
+Terminal 1: Start the Backend ServerBashcd backend
 ```bash 
 node server.js
 ```
 
-# Terminal 2: Start the Frontend React AppBash# From the root MindEase directory
+Terminal 2: Start the Frontend React AppBash# From the root MindEase directory
 ```bash 
 npm run dev
 ```
